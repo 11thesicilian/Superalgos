@@ -80,7 +80,7 @@ const cloneTheRepoPromise = async (resolve) => {
     console.log(' ')
     console.log('[INFO] Cloning plugin repo from ' + repoURL + ' into ' + cloneDir)
 
-    exec('git clone ' + repoURL + ' ' + global.env.PROJECT_PLUGIN_MAP[propertyName].dir + ' --branch develop',
+    exec('git clone ' + repoURL + ' ' + global.env.PROJECT_PLUGIN_MAP[propertyName].dir + ' --branch master',
       {
         cwd: path.join(global.env.PATH_TO_PLUGINS)
       },
